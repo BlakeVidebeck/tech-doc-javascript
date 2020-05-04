@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 300px){
+
+    body{
+        font-family: "lato", "sans-seriff";
+    }
+
+    #navbar header{
+        text-align: center;
+        padding: 15px 0 20px;
+        z-index: 1;
+        font-size: 1.7rem;
+    }
+
+    #main-doc header{
+        padding: 0 10px;
+        z-index: 1;
+        font-size: 1.7rem;
+    }
+
+    #navbar{
+        background-color: white;
+        position: absolute; /*changed to absolute from fixed*/
+        width: 100%;
+        top: 0;
+    }
+
+    #navbar ul{
+        z-index: 2;
+        width: 100%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        overflow: scroll;
+        height: 180px;
+    }
+
+    #navbar li{
+        padding: 15px 0 15px 20px;
+        border: 1px solid gray;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    #main-doc{
+        position: relative;
+        padding: 20px;
+        margin-top: 250px;
+        z-index: -1;
+        font-size: 1.3rem;
+    }
+
+    .main-section{
+        width: 100%;
+        margin: 20px auto;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        }
+
+    .main-section article{
+            padding: 20px;
+        }
+
+    p{
+        margin: 15px 0;
+    }
+
+    .main-section li{
+        margin: 10px 0 10px 30px;
+    }
+
+    .main-section ul{
+        margin-left: 30px;
+    }
+
+    code{
+        font-family: "Courier new";
+        font-size: 0.8rem;
+        background-color: #eee;
+        width: 100%;
+        display: block;
+        padding: 10px;
+        white-space: pre-wrap;
+        text-align: left;
+        line-height: 2;
+        border-radius: 2px;
+        margin: 15px 0;
+    }
+}
